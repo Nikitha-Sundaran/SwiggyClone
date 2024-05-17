@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* .active{
+    color:#FC8019;
+  }
+  
+   .svg-class.focus{
+    stroke: #FC8019;
+      stroke-width: 0;
+      fill: #FC8019;
+  } */
