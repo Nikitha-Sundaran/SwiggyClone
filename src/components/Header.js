@@ -43,28 +43,29 @@ const Header =() =>{
     return(
     <div className='flex justify-between shadow-lg w-full sticky top-0 z-20 bg-white'>
       <Link to='/'>
-    <img  src={appLogo} alt="app" className='p-2 mt-2 ml-6 h-12 hover:scale-110 hover:duration-300'/>
+    <img  src={appLogo} alt="app" className='p-2 mt-2 ml-16 h-16 hover:scale-110 hover:duration-300'/>
     </Link>
     <div style={{ color: "#3D4152" }}
         className="flex items-center text-base font-medium">
       <ul className='flex py-6'>
-      <li className='px-4 flex flex-row items-center'>
+      <li className='px-8 flex flex-row items-center'>
       <Link to='/search'>
         <div className='flex items-center'>
           <img src={Search} alt='Search' />
-          <span className="ml-3  hidden md:block ">Search</span>
+          <span className="ml-3  hidden md:block">Search</span>
         </div>
       </Link>
       </li>
-      <li className='px-4 flex flex-row items-center'>
+      <li className='px-8 flex flex-row items-center'>
       <Link to='/offers'>
         <div className='flex items-center'>
           <img src={Offer} alt='Offer' className="svg-class" />
-          <span className="ml-3 hidden md:block">Offer</span>
+          <span className="ml-3 hidden md:block">Offers</span>
+          <sup className="text-orange-400 text-xs">NEW</sup>
         </div>
       </Link>
       </li>
-      <li className='px-4 flex flex-row items-center'>
+      <li className='px-8 flex flex-row items-center'>
   {userData ?
       <Link to='/profile'>
         <div className='flex items-center'>
@@ -81,7 +82,7 @@ const Header =() =>{
       </Link>
 }
       </li>
-      <li className='px-4 flex flex-row items-center'>
+      <li className='px-8 flex flex-row items-center'>
       <Link to='/cart'>
       {length === 0 ?
         <div className='flex items-center'>

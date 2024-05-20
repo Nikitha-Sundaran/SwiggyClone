@@ -55,14 +55,14 @@ const Search = () =>{
         })
       }
     return (
-        <div className="w-[80%] mx-auto mt-10">
+        <div className="w-[70%] mx-auto mt-16">
             <div>
             <input 
-            className="p-3 w-[100%] outline-none border rounded"
+            className="p-3 w-[100%] outline-none border rounded border-gray-400"
                onChange={(e)=>setValue(e.target.value)}
                value={value}
-               placeholder="Search For Restraunts"
-            />
+               placeholder="Search for restaurants and food"
+            />     
             </div>
             <div>
             {suggestions ?
